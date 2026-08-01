@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="index">
+  <title>Welcome to The CSE Cheese Society</title>
+  <link rel="stylesheet" href="vars.css">
+  <link rel="stylesheet" href="global.css">
+  <!--
+    GRID HOLY GRAIL
+    The full holy grail in ONE grid container — no wrappers, no nesting.
+    grid-template-areas draws the layout as ASCII art: header and footer
+    span all three columns, nav | main | aside share the middle row.
+    Because every region is placed by name, the single media query below
+    re-draws the whole page as one column just by rewriting the map.
+  -->
+  <style>
+    body {
+      --nav-width: 10rem;
+      --aside-width: 12rem;
+
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "nav    main   aside"
+        "footer footer footer";
+      grid-template-columns: var(--nav-width) 1fr var(--aside-width);
+      grid-template-rows: auto 1fr auto;
+      min-height: 100svh;
+
+      > header {
+        grid-area: header;
+        padding: var(--space-2) var(--space-3);
+        border-block-end: var(--border);
+        background: var(--panel);
+      }
+
+      > nav {
+        grid-area: nav;
+        padding: var(--space-2);
+        border-inline-end: var(--border);
+        background: var(--panel);
+
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+        }
+      }
+
+      > main {
+        grid-area: main;
+        padding: var(--space-3);
+      }
+
+      > aside {
+        grid-area: aside;
+        padding: var(--space-2);
+        border-inline-start: var(--border);
+        background: var(--panel);
+      }
+
+      > footer {
+        grid-area: footer;
+        padding: var(--space-2) var(--space-3);
+        border-block-start: var(--border);
+        background: var(--panel);
+      }
+
+      @media (max-width: 40rem) {
+        grid-template-areas:
+          "header"
+          "nav"
+          "main"
+          "aside"
+          "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto auto;
+
+        > nav,
+        > aside {
+          border-inline: none;
+          border-block-end: var(--border);
+        }
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSE Cheese Society</h1>
+  </header>
+
+  <nav>
+    <p>Pages:</p>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="guide/index.html">Cheese Guide</a></li>
+      <li><a href="join.html">Join Now</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Welcome to The CSE Cheese Society</h2>
+    <p>We are a community of students, staff, and cheese enthusiasts who gather to taste, learn about, and discuss cheeses from around the world. Whether you are an experienced cheese connoisseur or simply cheese-curious, you are welcome here.</p>
+    <p>Explore our cheese guide, learn more about the Society, or join us at an upcoming tasting.</p>
+    <button popovertarget="mypopover">Toggle the popover</button>
+<div id="mypopover" popover>Popover content</div>
+
+    <button popovertarget="fact">Cheese Fact</button>
+    <div id="fact">Cheese is one of the world’s oldest prepared foods, with evidence of cheesemaking dating back thousands of years.</div>
+  </main>
+
+  <aside>
+    <h3>Cheese of the Month</h3>
+    <p>This month, we are celebrating blue cheese—bold, distinctive, and full of character.</p>
+  </aside>
+
+  <footer>
+    <p>Copyright 2026 The CSE Cheese Society. Cheese responsibly.</p>
+  </footer>
+</body>
+</html>
+

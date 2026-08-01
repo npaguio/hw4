@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="404">
+  <title>05 · Flex centering</title>
+  <link rel="stylesheet" href="vars.css">
+  <link rel="stylesheet" href="global.css">
+  <!--
+    FLEX CENTERING
+    The body is a flex container filling the viewport (min-height: 100svh).
+    justify-content centers its child on the main axis (horizontal here)
+    and align-items centers it on the cross axis (vertical) — perfect
+    centering in three lines, the problem floats never solved.
+  -->
+  <style>
+    body {
+      --card-width: 28rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100svh;
+      padding: var(--space-3);
+
+      main {
+        max-width: var(--card-width);
+        padding: var(--space-3);
+        border: var(--border);
+        border-block-start: var(--rule);
+        background: var(--panel);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSE Cheese Society</h1>
+  </header>
+
+  <nav>
+    <p>Pages:</p>
+    <ul>
+      <li><a href="#">Link one</a></li>
+      <li><a href="#">Link two</a></li>
+      <li><a href="#">Link three</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>404 - Page Not Found</h1>
+    <p>Uh oh, looks like we don't have this type of cheese in our inventory! Try checking for something else!</p>
+  </main>
+  <footer>
+    <p>Copyright 2026 The CSE Cheese Society. Cheese responsibly.</p>
+  </footer>
+</body>
+</html>

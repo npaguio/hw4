@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="about">
+  <title>About The CSE Cheese Society</title>
+  <link rel="stylesheet" href="vars.css">
+  <link rel="stylesheet" href="global.css">
+  <!--
+    FLOAT
+    float: left shifts the figure to one side and takes it out of normal
+    flow; the line boxes of following text shorten to wrap around it.
+    The figure is deliberately taller than all the text, so the footer's
+    clear: both is visible: without it, the footer would slide up and sit
+    beside the float; with it, the footer starts below the figure's bottom.
+  -->
+  <style>
+    body {
+      --figure-width: 11rem;
+      --figure-height: 24rem;
+
+      max-width: var(--measure);
+      margin-inline: auto;
+      padding: var(--space-3);
+
+      article {
+        figure {
+          float: left;
+          width: var(--figure-width);
+          min-height: var(--figure-height);
+          margin: 0 var(--space-2) var(--space-1) 0;
+          padding: var(--space-2);
+          border: var(--border);
+          background: var(--panel);
+        }
+      }
+
+      > footer {
+        clear: both;
+        padding: var(--space-2);
+        border-block-start: var(--rule);
+        background: var(--panel);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSE Cheese Society</h1>
+  </header>
+
+  <nav>
+    <p>Pages:</p>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="guide/index.html">Cheese Guide</a></li>
+      <li><a href="join.html">Join Now</a></li>
+    </ul>
+  </nav>
+  <main>
+  <h1>About The CSE Cheese Society</h1>
+  <article>
+    <figure>
+      <figcaption>
+      <h2>Meetings</h2>
+      <p>First Friday of every month, CSE Building, room 1337. Bring nothing
+but curiosity. The Society provides the cheese; the cheese provides
+the agenda.</p>
+      </figcaption>
+    </figure>
+    <p>The CSE Cheese Society was founded in 2024, when a seminar ended
+early and a cheese plate did not. What began as an argument over the
+last piece of Comte became a weekly meeting, a shared spreadsheet of
+tasting notes, and eventually a constitution written on a napkin. The
+napkin has since been laminated.<br><br>
+
+Our mission is simple: taste widely, take notes, and never let
+processed cheese food into the building. We host monthly tastings,
+maintain the Short Guide to Cheese, and elect a Cheese of the Month
+by ranked-choice ballot. Election disputes are settled by blind
+tasting.<br><br>
+
+The Society is open to all students, staff, and the lactose-curious.
+No experience required. Strong opinions optional but traditional.<br><br></p>
+  
+<h2>Meet the Board</h2>
+
+<details>Casey once drove four hours for a cheese that turned out to be sold
+out, and describes the trip as "still worth it." Responsible for the
+napkin constitution. Favorite family: hard. Favorite cheese: a
+five-year Gouda "that changed my life."<summary>Casey Rennet — Founding Chair</summary></details>
+<br>
+<details> 
+Bri manages the Society's aging fridge (a mini-fridge, lovingly
+mislabeled "THE CAVE") and its strict humidity log. Favorite family:
+soft-ripened. Position on rinds: eat them, always, no exceptions.
+<summary>Bri Larsson — Keeper of the Cave</summary></details><br>
+
+<details>
+Sam claims no relation to the village of Roquefort-sur-Soulzon but
+has never provided documentation either way. Runs the annual "Blue
+Cheese Amnesty" where skeptics get one supervised second chance.
+Favorite cheese: Stilton, at midnight, with port.
+  <summary>Sam Roquefort-Nguyen — Minister of Blue</summary>
+</details><br>
+<br>
+</article>
+</main>
+  <footer>
+    <p>Copyright 2026 The CSE Cheese Society. Cheese responsibly.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
