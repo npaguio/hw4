@@ -6,8 +6,7 @@ body {
       margin-inline: auto;
       padding: var(--space-3);
 
-      article {
-        figure {
+      article figure {
           float: left;
           width: var(--figure-width);
           min-height: var(--figure-height);
@@ -15,7 +14,6 @@ body {
           padding: var(--space-2);
           border: var(--border);
           background: var(--panel);
-        }
       }
 
       > footer {
