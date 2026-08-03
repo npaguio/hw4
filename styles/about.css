@@ -6,6 +6,7 @@ body {
       margin-inline: auto;
       padding: var(--space-3);
 
+
       article figure {
           float: left;
           width: var(--figure-width);

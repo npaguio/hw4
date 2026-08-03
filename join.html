@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description">
   <title>Join The CSE Cheese Society</title>
-  <link rel="stylesheet" href="vars.css">
-  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="styles/vars.css">
+  <link rel="stylesheet" href="styles/global.css">
   <!--
     FLEX PAGE SCAFFOLD
     The body is a flex column at least as tall as the viewport. Header and
@@ -31,6 +31,7 @@
         padding: var(--space-3);
           form {
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
           min-height: 100svh;
@@ -49,7 +50,7 @@
 </head>
 <body>
   <header>
-    <h1>CSE Cheese Society</h1>
+    <h1>CSE Cheese Society <img src="images/logo.svg" width="50" height="50"></h1> 
   </header>
 
   <nav>
@@ -108,22 +109,3 @@ Fill out the form and the Keeper of the Cave will be in touch.</p>
 </body>
 </html>
 
-
-
-
-
-Form fields:
-
-- Submit button: "Sign me up"
-
-"Why join?" dialog copy (opens from a button near the form):
-
-Why join?
-
-- Monthly tastings. The Society buys the cheese. You bring opinions.
-- Voting rights in the Cheese of the Month election.
-- Access to THE CAVE (a mini-fridge, but a very serious one).
-- A laminated membership card featuring the cheese of your choice.
-- Amnesty program for recovering blue-cheese skeptics.
-
-Close button: "I'm convinced"
