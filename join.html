@@ -36,7 +36,20 @@
     <h1>Join The CSE Cheese Society</h1>
     <p>Membership is free, meetings are monthly, and the cheese is real.
 Fill out the form and the Keeper of the Cave will be in touch.</p>
-    <form>
+    
+    <button command="show-modal" commandfor="joininfo">Why join?</button>
+    <dialog id="joininfo">
+      <p>
+        - Monthly tastings. The Society buys the cheese. You bring opinions.<br>
+        - Voting rights in the Cheese of the Month election.<br>
+        - Access to THE CAVE (a mini-fridge, but a very serious one).<br>
+        - A laminated membership card featuring the cheese of your choice.<br>
+        - Amnesty program for recovering blue-cheese skeptics.<br>
+      </p>
+      <button commandfor="joininfo" command="close">I'm convinced</button>
+    </dialog>
+
+  <form>
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required> <br>
 
@@ -67,9 +80,9 @@ Fill out the form and the Keeper of the Cave will be in touch.</p>
 
 
     <input type="submit" value="Sign Me Up">
+
+    
 </form>
-
-
   </main>
 
   <footer>
