@@ -3,10 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description">
+  <meta name="description" content="Join form">
   <title>Join The CSE Cheese Society</title>
   <link rel="stylesheet" href="styles/vars.css">
   <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/join.css">
+
   <!--
     FLEX PAGE SCAFFOLD
     The body is a flex column at least as tall as the viewport. Header and
@@ -14,43 +16,10 @@
     absorb the leftover space and pushes the footer to the bottom even
     when the content is short.
   -->
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100svh;
-
-      > header {
-        padding: var(--space-2) var(--space-3);
-        border-block-end: var(--border);
-        background: var(--panel);
-      }
-
-      > main {
-        flex: 1;
-        padding: var(--space-3);
-          form {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          min-height: 100svh;
-          }
-      }
-
-      > footer {
-        padding: var(--space-2) var(--space-3);
-        border-block-start: var(--border);
-        background: var(--panel);
-      }
-
-      
-    }
-  </style>
 </head>
 <body>
   <header>
-    <h1>CSE Cheese Society <img src="images/logo.svg" width="50" height="50"></h1> 
+    <h1>CSE Cheese Society <img src="images/logo.svg" width="50" height="50" alt="Cheese logo"></h1> 
   </header>
 
   <nav>
@@ -87,13 +56,13 @@ Fill out the form and the Keeper of the Cave will be in touch.</p>
     <input type="text" id="fav" name="fav" placeholder="e.g. Comte"> <br>
 
     <fieldset>
-    <legend>Which of these have you tasted?</legend>
-    <input type = checkbox id = “brie” name = “br” value = “B” />
-    <label for = "brie">Brie</label><br>
-    <input type = checkbox id = "roquefort" name = “Ro” value = “R” />
-    <label for = "roquefort">Roquefort</label><br>
-    <input type = checkbox id = "gouda" name = “ag” value = “G” />
-    <label for = "gouda">Aged Gouda</label>
+      <legend>Which of these have you tasted?</legend>
+      <input type="checkbox" id="brie" name="br" value="B">
+      <label for="brie">Brie</label><br>
+      <input type="checkbox" id="roquefort" name="Ro" value="R">
+      <label for="roquefort">Roquefort</label><br>
+      <input type="checkbox" id="gouda" name="ag" value="G">
+      <label for="gouda">Aged Gouda</label>
     </fieldset>
 
 

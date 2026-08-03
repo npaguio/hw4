@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description">
+  <meta name="description" content="Fresh cheese info">
   <title>Fresh Cheeses</title>
   <link rel="stylesheet" href="../styles/vars.css">
   <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/family.css">
   <!--
     GRID PAGE SCAFFOLD
     The same header/main/footer page as demo 06, built with grid instead.
@@ -14,40 +15,11 @@
     the page; each region claims its slot with grid-area. Rows are
     auto 1fr auto: natural height at the edges, main takes the rest.
   -->
-  <style>
-    body {
-      display: grid;
-      grid-template-areas:
-        "header"
-        "main"
-        "footer";
-      grid-template-rows: auto 1fr auto;
-      min-height: 100svh;
 
-      > header {
-        grid-area: header;
-        padding: var(--space-2) var(--space-3);
-        border-block-end: var(--border);
-        background: var(--panel);
-      }
-
-      > main {
-        grid-area: main;
-        padding: var(--space-3);
-      }
-
-      > footer {
-        grid-area: footer;
-        padding: var(--space-2) var(--space-3);
-        border-block-start: var(--border);
-        background: var(--panel);
-      }
-    }
-  </style>
 </head>
 <body>
   <header>
-    <h1>CSE Cheese Society <img src="../images/logo.svg" width="50" height="50"></h1> 
+    <h1>CSE Cheese Society <img src="../images/logo.svg" width="50" height="50" alt="Cheese logo"></h1> 
   </header>
 
   <nav>
@@ -62,7 +34,7 @@
 
   <main>
     <h1>Fresh Cheeses</h1>
-    <img src = "../images/cheese-fresh.svg">
+    <img src = "../images/cheese-fresh.svg" alt="Fresh cheese picture">
     <p>Young, moist, and mild. Fresh cheeses skip aging entirely: the curds
 are drained, maybe lightly salted, and sent straight to the table.
 They taste of milk itself, which is the whole point. <br><br>
